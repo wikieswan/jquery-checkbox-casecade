@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>input checkbox casecade jquery plug-in</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-checkbox-casecade.js"></script>
+		
+	</head>
+<body>
+	<h1>input checkbox casecade jquery plug-in</h1>
+
+	<h2>input checkbox demo1</h2>
+	<div id="checkboxContent1">
+		<label>
+			<input type="checkbox" name="name1" data-chk="1"/>all
+		</label>
+		<label>
+			<input type="checkbox" name="name1" data-chk="0"/>item1
+		</label>
+		<label>
+			<input type="checkbox" name="name1" data-chk="0"/>item2
+		</label>
+	</div>
+
+	<h2>input checkbox demo2</h2>
+	<div id="checkboxContent2">
+		<label>
+			<input type="checkbox" name="name2" data-chk="1"/>another-all
+		</label>
+		<label>
+			<input type="checkbox" name="name2" data-chk="0"/>another-item1
+		</label>
+		<label>
+			<input type="checkbox" name="name2" data-chk="0"/>another-item2
+		</label>
+	</div>
+
+	
+
+	<script type="text/javascript">	
+		$(function () {
+			$('#checkboxContent1').casecade();
+			$('#checkboxContent2').casecade();
+		})
+	</script>
+</body>
+</html>
