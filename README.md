@@ -10,12 +10,12 @@ will do all this for you .
 
 ## how to use it 
 
-1 include jquery-checkbox-casecade.js in your html file . Please make sure you have included jquery before this.
+###1 include jquery-checkbox-casecade.js in your html file . Please make sure you have included jquery before this.
 
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="jquery-checkbox-casecade.js"></script>
 
-2 add an spacial attribute ```data-chk``` in html input:checkbox tag 
+###2 add an spacial attribute ```data-chk``` in html input:checkbox tag 
 
 	<div id="checkboxContent1">
 		<label>
@@ -32,7 +32,7 @@ will do all this for you .
 ```data-chk="1"``` means it is the "select all" guy. And ```data-chk="0"``` means it is the "select all"'s items
 The "select all" and its items have the same name value.
 
-3 do action ! 
+###3 do action ! 
 
 	<script type="text/javascript">	
 		$(function () {
@@ -41,6 +41,6 @@ The "select all" and its items have the same name value.
 	</script>
 
 use jquery-checkbox-casecade plug-in just code  ```$('#checkboxContent1').casecade();``` .
- ```#checkboxContent1``` is input:checkbox's parent DOM. If you code does not has this Dom Structure ,ues ```body```instead .
+ ```#checkboxContent1``` is input:checkbox's parent DOM. If you code does not has this Dom Structure ,use ```body```instead .
 
 To see more ,you can download and see the demo file.
