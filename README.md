@@ -15,7 +15,7 @@ will do all this for you .
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="jquery-checkbox-casecade.js"></script>
 
-2 add an spacal attribute ```data-chk``` in html input:checkbox tag 
+2 add an spacial attribute ```data-chk``` in html input:checkbox tag 
 
 	<div id="checkboxContent1">
 		<label>
@@ -43,4 +43,4 @@ The "select all" and its items have the same name value.
 use jquery-checkbox-casecade plug-in just code  ```$('#checkboxContent1').casecade();``` .
  ```#checkboxContent1``` is input:checkbox's parent DOM. If you code does not has this Dom Structure ,ues ```body```instead .
 
-To see more ,you can download and see ths demo file.
+To see more ,you can download and see the demo file.
