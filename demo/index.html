@@ -9,38 +9,29 @@
 <body>
 	<h1>input checkbox casecade jquery plug-in</h1>
 
-	<h2>input checkbox demo1</h2>
+	
+
 	<div id="checkboxContent1">
 		<label>
-			<input type="checkbox" name="name1" data-chk="1"/>all
-		</label>
+			<input type="checkbox" name="name3" data-id="p0" data-parent="-1"/>all-0</label>
 		<label>
-			<input type="checkbox" name="name1" data-chk="0"/>item1
-		</label>
+			<input type="checkbox" name="name3" data-id="p1" data-parent="0"/>reverse-select</label>
+		<br>
 		<label>
-			<input type="checkbox" name="name1" data-chk="0"/>item2
-		</label>
+			<input type="checkbox" name="name3" data-id="p10" data-parent="p0"/>p0-10</label>
+		<label>
+			<input type="checkbox" name="name3" data-id="p11" data-parent="p0"/>p0-11</label>
+		<br>
+		<label>
+			<input type="checkbox" name="name3" data-id="p20" data-parent="p10"/>p10-20</label>
+		<label>
+			<input type="checkbox" name="name3" data-id="p21" data-parent="p10"/>p10-21</label>
 	</div>
-
-	<h2>input checkbox demo2</h2>
-	<div id="checkboxContent2">
-		<label>
-			<input type="checkbox" name="name2" data-chk="1"/>another-all
-		</label>
-		<label>
-			<input type="checkbox" name="name2" data-chk="0"/>another-item1
-		</label>
-		<label>
-			<input type="checkbox" name="name2" data-chk="0"/>another-item2
-		</label>
-	</div>
-
 	
 
 	<script type="text/javascript">	
 		$(function () {
 			$('#checkboxContent1').casecade();
-			$('#checkboxContent2').casecade();
 		})
 	</script>
 </body>
