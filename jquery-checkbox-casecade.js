@@ -21,14 +21,17 @@ $.fn.casecade = function () {
 
 		    $chks = $('input[name="'+name+'"]'), //all checkbox		    
 		    $rootChk = $('input[name="'+name+'"][data-parent="-1"]'), // root checkbox
+		    $reverse = $('input[name="'+name+'"][data-parent="0"]'), // reverse checkbox
 		    $parentChk = $('input[name="'+name+'"][data-id="'+parent+'"]'), // target's parent checkbox
 		    $brotherChks = $('input[name="'+name+'"][data-parent="'+parent+'"]'), // target's brothers checkbox
 		    $childrenChks = $('input[name="'+name+'"][data-parent="'+id+'"]'), // target's brothers checkbox
-		    $offspring, //target's all offspring
+		    $offspring, //target's all offspring,
+		    $allOffsrping = getOffspring($rootChk,[]),//
 		    count = 0;
-		if(parent===0){//reverse select
-			for(var i=0,len=$chks.length,e,e,eId,eChildren;i<len;i++){
-				e = $chks[i];
+		    
+		if(parent===0){//reverse select - make all leaf checkboxs click
+			for(var i=0,len=$allOffsrping.length,e,eId,eChildren;i<len;i++){
+				e = $allOffsrping[i];
 				eId = $(e).data('id');
 				$eChildren = $('input[name="'+name+'"][data-parent="'+eId+'"]');
 				if($eChildren.length===0){
@@ -37,7 +40,6 @@ $.fn.casecade = function () {
 			}
 			return ;
 		}
-
 
 		if($childrenChks.length===0){// leaf node change event
 			if(parent===-1){

@@ -2,9 +2,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>input checkbox casecade jquery plug-in</title>
-		<script type="text/javascript" src="jquery.min.js"></script>
-		<script type="text/javascript" src="jquery-checkbox-casecade.js"></script>
 		
+    	<link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../jquery-checkbox-casecade.js"></script>
 	</head>
 <body>
 	<h1>input checkbox casecade jquery plug-in</h1>
@@ -16,16 +19,78 @@
 			<input type="checkbox" name="name3" data-id="p0" data-parent="-1"/>all-0</label>
 		<label>
 			<input type="checkbox" name="name3" data-id="p1" data-parent="0"/>reverse-select</label>
-		<br>
-		<label>
-			<input type="checkbox" name="name3" data-id="p10" data-parent="p0"/>p0-10</label>
-		<label>
-			<input type="checkbox" name="name3" data-id="p11" data-parent="p0"/>p0-11</label>
-		<br>
-		<label>
-			<input type="checkbox" name="name3" data-id="p20" data-parent="p10"/>p10-20</label>
-		<label>
-			<input type="checkbox" name="name3" data-id="p21" data-parent="p10"/>p10-21</label>
+		
+		<table class="table table-bordered">
+			<thead>
+				<th>first class</th>
+				<th>second class</th>
+				<th>third class</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<label>
+							<input type="checkbox" name="name3" data-id="p00" data-parent="p0"/>p0-10
+						</label>
+					</td>
+					<td>
+						<label>
+							<input type="checkbox" name="name3" data-id="p000" data-parent="p00"/>p0-10
+						</label>
+						<label>
+							<input type="checkbox" name="name3" data-id="p001" data-parent="p00"/>p0-10
+						</label>
+					</td>
+					<td>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0000" data-parent="p000"/>p0-10
+						</label>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0001" data-parent="p000"/>p0-10
+						</label>
+						<hr>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0010" data-parent="p001"/>p0-10
+						</label>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0011" data-parent="p001"/>p0-10
+						</label>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						<label>
+							<input type="checkbox" name="name3" data-id="p01" data-parent="p0"/>p0-10
+						</label>
+					</td>
+					<td>
+						<label>
+							<input type="checkbox" name="name3" data-id="p010" data-parent="p01"/>p0-10
+						</label>
+						<label>
+							<input type="checkbox" name="name3" data-id="p011" data-parent="p01"/>p0-10
+						</label>
+					</td>
+					<td>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0100" data-parent="p010"/>p0-10
+						</label>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0101" data-parent="p010"/>p0-10
+						</label>
+						<hr>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0110" data-parent="p011"/>p0-10
+						</label>
+						<label>
+							<input type="checkbox" name="name3" data-id="p0111" data-parent="p011"/>p0-10
+						</label>
+					</td>
+					
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	
 

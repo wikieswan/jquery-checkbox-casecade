@@ -1,0 +1,7 @@
+label{
+	margin-right: 10px ;
+}
+table label{
+	display: block;
+	margin: 5px;
+}
