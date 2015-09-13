@@ -1,0 +1,24 @@
+{
+  "name": "jquery-checkbox-casecade",
+  "version": "1.0.0",
+  "description": "input:checkbox casecade --- jquery plug-in",
+  "main": "jquery-checkbox-casecade.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wikieswan/jquery-checkbox-casecade.git"
+  },
+  "author": "wikeis.wan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wikieswan/jquery-checkbox-casecade/issues"
+  },
+  "homepage": "https://github.com/wikieswan/jquery-checkbox-casecade#readme",
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.1"
+  }
+}
